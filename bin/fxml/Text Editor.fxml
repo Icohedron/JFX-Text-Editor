@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="me.icohedron.MainController">
+  <children>
+    <MenuBar prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#newFile" text="New" fx:id="miNew" />
+            <MenuItem mnemonicParsing="false" onAction="#openFile" text="Open" fx:id="miOpen" />
+            <MenuItem mnemonicParsing="false" onAction="#saveFile" text="Save" fx:id="miSave" />
+            <MenuItem mnemonicParsing="false" onAction="#saveAsFile" text="Save As..." fx:id="miSaveAs" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Todo" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#aboutTextEditor" text="About" fx:id="miAbout" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <TextArea fx:id="textArea" prefWidth="200.0" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="36.0" />
+  </children>
+</AnchorPane>
